@@ -1,13 +1,24 @@
-// 7. Criar uma função que indica a nota qualitativa dada uma nota
-//quantitativa. Assuma as seguintes escalas: Excelente (90%-100%),
-//Muito bom (80%-90%), Bom (70%-80%), Suficiente (50%-70%),
-//Insuficiente (30%-50%) e Muito Insuficiente (0%-30%). Caso a nota dada
-//esteja fora da escala, deve retornar Nota inválida. (Ex: getGrade(67) ->
-//“Suficiente”, getGrade(102) -> “Nota inválida”).
+/*
+7. Criar uma função que indica a nota qualitativa dada uma nota
+quantitativa. Assuma as seguintes escalas: Excelente (90%-100%),
+Muito bom (80%-90%), Bom (70%-80%), Suficiente (50%-70%),
+Insuficiente (30%-50%) e Muito Insuficiente (0%-30%). Caso a nota dada
+esteja fora da escala, deve retornar Nota inválida. (Ex: getGrade(67) ->
+“Suficiente”, getGrade(102) -> “Nota inválida”).
+ */
 
 package aula3;
 import java.util.Scanner;
 public class TrabalhoAutonomo7 {
+
+    public static void main(String[] args) {
+        Scanner notafinal= new Scanner(System.in); // Cria o Scanner para ler input
+        System.out.println("Qual o valor da nota?"); // Pede a nota ao utilizador
+        int nota = notafinal.nextInt(); // Lê o número inteiro (nextInt) que o utilizador escreveu
+        String resultado = getGrade(nota);// Chama a função getGrade com a nota e guarda o resultado
+        System.out.println("A nota equivale a " +getGrade(nota));
+    }
+
     public static String getGrade(int nota) {
             if (nota >= 90 && nota <= 100)
                 return "Excelente";
@@ -23,14 +34,5 @@ public class TrabalhoAutonomo7 {
                 return "Muito Insuficiente";
             else
                 return "Nota inválida";
-    }
-
-    public static void main(String[] args) {
-        Scanner notafinal= new Scanner(System.in); // Cria o Scanner para ler input
-        System.out.println("Qual o valor da nota?"); // Pede a nota ao utilizador
-        int nota = notafinal.nextInt(); // Lê o número inteiro que o utilizador escreveu
-        String resultado = getGrade(nota);// Chama a função getGrade com a nota e guarda o resultado
-        System.out.println("A nota equivale a " +getGrade(nota));
-
     }
 }

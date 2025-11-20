@@ -2,7 +2,7 @@
 package aula3;
 import java.util.Scanner;
 public class TrabalhoAutonomo3 {
-    static boolean isEven(int numero) {
+    public static boolean isEven(int numero) {
         return numero % 2 == 0;
     }
     static void main(String[] args) {

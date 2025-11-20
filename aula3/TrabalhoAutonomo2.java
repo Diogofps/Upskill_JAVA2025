@@ -1,6 +1,7 @@
 // 2. Criar uma função que divide dois números. Caso a divisão seja por zero, a função deve devolver 0
 
 package aula3;
+
 import java.util.Scanner;
 public class TrabalhoAutonomo2 {
     static void main(String[] args) {
@@ -12,10 +13,9 @@ public class TrabalhoAutonomo2 {
 
         if (num2 != 0) {
             int resultado = num1 / num2;
-            System.out.println(resultado);
+            System.out.println("O resultado é: " +resultado);
         } else {
             System.out.println("Não podes dividir por 0");
         }
-
     }
 }

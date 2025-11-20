@@ -2,6 +2,7 @@
 package aula3;
 import java.util.Scanner;
 public class TrabalhoAutonomo4 {
+   /*
     static boolean isPositive(int num2) {
         return num2 > 0;
     }
@@ -16,3 +17,18 @@ public class TrabalhoAutonomo4 {
         }
     }
 }
+*/
+static void main(String[] args) {
+    Scanner num = new Scanner(System.in);
+    System.out.println("Inserir número:");
+    int num2 = num.nextInt();
+    System.out.println(num2);
+}
+
+static boolean isPositive(int num2) {
+    if (num2 > 0){
+        return true;
+    }else{
+        return false;
+    }
+}}

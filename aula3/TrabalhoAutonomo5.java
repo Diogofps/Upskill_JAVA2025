@@ -4,12 +4,17 @@
 
 package aula3;
 import java.util.Scanner;
+
 public class TrabalhoAutonomo5 {
-    static void main(String[] args) {
+
+    public static void main(String[] args) {
+        leitura();
+}
+
+        public static void leitura() {
         Scanner repetir = new Scanner(System.in);
         System.out.println("Escreve um número para eu repetir.");
         String texto = repetir.nextLine();
         System.out.println(texto);
-
     }
 }
