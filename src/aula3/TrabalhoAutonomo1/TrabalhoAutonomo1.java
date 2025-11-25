@@ -1,7 +1,7 @@
 //1. Criar uma função que dado o ano de nascimento devolve a idade
 // resolvi de uma forma simples primeiro, e adicionei nos comentários outra forma, com classes que ainda não estudámos em aula.
 
-package aula3;
+package aula3.TrabalhoAutonomo1;
 import java.util.Scanner; // Importa a classe Scanner, que serve para ler dados do teclado/interação do utilizador
 // import java.time.LocalDate; - Importa a classe LocalDate, descobre a data de hoje
 // import java.time.Period; -  Importa a classe Period, calcula diferenças entre duas datas
